@@ -4,8 +4,12 @@ version = "0.1.0"
 edition = "2021"
 license = "MIT"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[[bin]]
+name = "log2"
+path = "src/nginx_log2.rs"
 
 [dependencies]
 anyhow = "1.0.95"
+chrono = "0.4.39"
 regex = "1.11.1"
+winnow = { version = "0.7.2", features = ["simd"] }
